@@ -11,7 +11,7 @@
       <v-btn text @click="scroll('portfolio')"  >Portfolio</v-btn>
       <v-btn text @click="scroll('services')" > Services</v-btn>
       <v-btn text @click="scroll('page')"  > Page</v-btn>
-      <v-btn text @click="scroll('biog')"  > Biog</v-btn>
+      <v-btn text @click="scroll('blog')"  > Blog</v-btn>
       <v-btn text @click="scroll('contact')"  > Contact</v-btn>
     </v-app-bar>
   </template>
