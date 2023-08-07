@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app color="black" dark flat class="px-12" >
       <v-btn >
-        <v-icon color="yellow" left class="mr-2">fas fa-signature</v-icon> AHLAN
+        <v-icon color="yellow" left class="mr-2">fas fa-signature</v-icon> NAM NGUYEN
       </v-btn>
       
   
@@ -16,15 +16,13 @@
     </v-app-bar>
   </template>
   
-  <script>
-  export default {
-    methods: {
-      scroll(refName) {
-        const element = document.getElementById(refName);
-        element.scrollIntoView({ behavior: "smooth" });
-      },
-    },
-  };
+  <script setup>
+    // import { ref } from 'vue';
+
+    const scroll = (refName) => {
+    const element = document.getElementById(refName);
+    element.scrollIntoView({ behavior: 'smooth' });
+    };
   </script>
   
   <style>

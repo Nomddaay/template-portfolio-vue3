@@ -7,7 +7,7 @@
           <v-col cols="5">
             <div style="position: relative" class="mt-16">
               <h1 class="text-grey">Hello,</h1>
-              <h1 class="text-white">I'M Lara Elizabeth</h1>
+              <h1 class="text-white">I'M Nomddaay</h1>
               <span class="text-grey">Web Designer & Developer</span><br />
 
               <v-btn tile dark class="text-yellow mt-8" variant="outlined">
@@ -305,48 +305,36 @@
   </v-app>
 </template>
 
-<script>
-import { defineComponent } from "vue";
+<script setup>
+import { ref } from 'vue';
 import NavBar from "../components/NavBar.vue";
 import FooterView from "../components/FooterView.vue";
 
-// Components
-//import HelloWorld from '../components/HelloWorld.vue';
+const slider2 = ref(50);
 
-export default defineComponent({
-  name: "HomeView",
-  setup() {
-    return {
-      slider2: 50,
-
-      items: [
-        {
-          img: "i3.jpg",
-        },
-        {
-          img: "i4.jpg",
-        },
-        {
-          img: "i5.jpg",
-        },
-        {
-          img: "i6.jpeg",
-        },
-        {
-          img: "i9.jpg",
-        },
-        {
-          img: "i8.jpg",
-        },
-      ],
-    };
+const items = ref([
+  {
+    img: "i3.jpg",
   },
-  components: {
-    NavBar,
-    FooterView
-},
-});
+  {
+    img: "i4.jpg",
+  },
+  {
+    img: "i5.jpg",
+  },
+  {
+    img: "i6.jpeg",
+  },
+  {
+    img: "i9.jpg",
+  },
+  {
+    img: "i8.jpg",
+  },
+]);
 </script>
+
+
 <style scoped>
 .v-container {
   padding: 16px 0 16px 0;
